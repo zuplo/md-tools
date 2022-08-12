@@ -23,7 +23,7 @@
   "license": "Copyright 2021",
   "scripts": {
     "test": "mocha",
-    "build": "npm run build:tsc && npm run build:cjs",
+    "build": "npm run build:cjs && npm run build:tsc",
     "build:tsc": "tsc --build",
     "build:cjs": "esbuild src/index.ts --bundle --platform=node --minify --sourcemap --target=node14 --outfile=dist/out.js",
     "release": "run-release --owner zuplo --repo md-tools",

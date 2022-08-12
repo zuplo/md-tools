@@ -4,11 +4,10 @@
     "outDir": "dist",
     "rootDir": "./src",
     "baseUrl": "src",
+    "target": "ES2021",
     "module": "NodeNext",
 
     "allowJs": true,
-
-    "target": "ES2021",
 
     "strict": true,
     "esModuleInterop": true,
