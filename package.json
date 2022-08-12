@@ -23,7 +23,9 @@
   "license": "Copyright 2021",
   "scripts": {
     "test": "mocha",
-    "build": "esbuild src/index.ts --bundle --platform=node --minify --sourcemap --target=node14 --outfile=dist/out.js"
+    "build": "esbuild src/index.ts --bundle --platform=node --minify --sourcemap --target=node14 --outfile=dist/out.js",
+    "release": "run-release --owner zuplo --repo core",
+    "set-package-version": "set-package-version --path ./package.json --version"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
