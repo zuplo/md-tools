@@ -10,15 +10,15 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/out.js",
-      "require": "./dist/out.js"
+      "types": "./index.d.ts",
+      "import": "./out.js",
+      "require": "./out.js"
     }
   },
   "files": [
-    "dist/*"
+    "*"
   ],
-  "types": "./dist/index.d.ts",
+  "types": "./index.d.ts",
   "author": "Zuplo",
   "license": "Copyright 2021",
   "scripts": {
