@@ -1,12 +1,12 @@
 {
-  "name": "@zuplo/doc-tools",
+  "name": "@zuplo/md-tools",
   "sideEffects": false,
   "version": "0.0.0",
   "description": "Docs utilities",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zuplo/doc-tools"
+    "url": "https://github.com/zuplo/md-tools"
   },
   "exports": {
     ".": {
