@@ -1,7 +1,7 @@
 {
   "name": "@zuplo/doc-tools",
   "sideEffects": false,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Docs utilities",
   "type": "module",
   "repository": {
