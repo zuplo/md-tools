@@ -1,0 +1,27 @@
+{
+  "include": ["src/**/*", "index.js"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "./src",
+    "baseUrl": "src",
+    "module": "NodeNext",
+
+    "allowJs": true,
+
+    "target": "ES2021",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "useUnknownInCatchVariables": false,
+    "noImplicitOverride": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "noImplicitAny": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

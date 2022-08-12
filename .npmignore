@@ -1,0 +1,12 @@
+.eslintrc.js
+.gitignore
+.mocharc.json
+node_modules
+test-fixtures
+tsconfig.json
+tsconfig.tsbuildinfo
+__tests__
+*.spec.ts
+*.spec.js
+src
+.github

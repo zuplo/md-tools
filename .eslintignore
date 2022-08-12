@@ -1,0 +1,8 @@
+dist/
+*spec.js
+packages/core/templates/
+packages/core/bundled/
+scripts/
+babel.config.js
+.eslintrc.js
+generated/

@@ -1,0 +1,55 @@
+{
+  "name": "@zuplo/doc-tools",
+  "sideEffects": false,
+  "version": "1.0.0",
+  "description": "Docs utilities",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zuplo/doc-tools"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/out.js",
+      "require": "./dist/out.js"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "types": "./dist/index.d.ts",
+  "author": "Zuplo",
+  "license": "Copyright 2021",
+  "scripts": {
+    "test": "mocha",
+    "build": "esbuild src/index.ts --bundle --platform=node --minify --sourcemap --target=node14 --outfile=dist/out.js"
+  },
+  "dependencies": {
+    "@mapbox/rehype-prism": "^0.8.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-slug": "^5.0.1",
+    "rehype-stringify": "^9.0.3",
+    "remark-gfm": "^3.0.1",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "unified": "^10.1.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^16.11.41",
+    "@zuplo/dev": "^1.38.0",
+    "chai": "^4.3.6",
+    "esbuild": "^0.14.47",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-unicorn": "^43.0.1",
+    "mocha": "^10.0.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
+    "typescript": "4.7.4"
+  }
+}
