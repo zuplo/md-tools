@@ -43,6 +43,6 @@
     "@types/node": "^18.11.19",
     "@zuplo/dev": "^1.38.0",
     "@zuplo/dev-tools": "^1.62.0",
-    "esbuild": "^0.17.6"
+    "esbuild": "^0.17.15"
   }
 }
