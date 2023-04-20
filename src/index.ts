@@ -5,6 +5,7 @@ import { unified } from "unified";
 import rehypePrism from "@mapbox/rehype-prism";
 import rehypeSlug from "rehype-slug";
 import rehypeStringify from "rehype-stringify";
+import remarkAdmonitions from "remark-admonitions";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
@@ -14,6 +15,7 @@ export async function render(markdown: string): Promise<string> {
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype)
+    .use(remarkAdmonitions)
     .use(rehypePrism)
     .use(rehypeSlug)
     .use(rehypeAutolinkHeadings)
