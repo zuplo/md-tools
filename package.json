@@ -45,6 +45,6 @@
     "@zuplo/dev": "^1.38.0",
     "@zuplo/dev-tools": "^1.62.0",
     "esbuild": "^0.18.9",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.3"
   }
 }
