@@ -1,7 +1,5 @@
 import {
-  copyFile,
   copyFileSync,
-  existsSync,
   readFileSync,
   writeFileSync,
 } from "fs";
@@ -24,7 +22,7 @@ delete pkg.dependencies;
 delete pkg.devDependencies;
 
 const outJson = JSON.stringify(pkg);
-const formattedJson = format(outJson, {
+const formattedJson = await format(outJson, {
   parser: "json-stringify",
 });
 writeFileSync(outPkgPath, formattedJson, "utf-8");
