@@ -5,9 +5,15 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 0
+    allow:
+      - dependency-type: "production"
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 0
+    allow:
+      - dependency-type: "production"
