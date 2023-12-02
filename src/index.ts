@@ -20,7 +20,7 @@ export interface Heading {
 }
 
 export interface RenderResult {
-  html: string | Buffer;
+  html: Uint8Array | string;
   headings: Heading[];
 }
 

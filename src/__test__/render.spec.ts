@@ -72,6 +72,9 @@ Hello
     `;
 
     const result = await render(md);
+    if (typeof result.html !== "string") {
+      throw new Error("Not a string");
+    }
     expect(
       result.html.includes('<form action="/stripe/checkout" method="POST">'),
     );
