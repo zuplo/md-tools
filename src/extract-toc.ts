@@ -1,8 +1,8 @@
 import { Heading as AstHeading } from "mdast";
 import { toString } from "mdast-util-to-string";
-import { VFileWithOutput } from "unified";
 import { Node } from "unist";
 import visit from "unist-util-visit";
+import { VFile } from "vfile";
 
 export interface Heading {
   depth: number;
@@ -11,7 +11,7 @@ export interface Heading {
 }
 
 export const hasHeadingsData = (
-  data: unknown
+  data: unknown,
 ): data is { headings: Heading[] } =>
   data instanceof Object &&
   data.hasOwnProperty("headings") &&
@@ -42,7 +42,7 @@ export const headings = (root: Node) => {
 };
 
 export default function remarkHeadings() {
-  return (node: Node, file: VFileWithOutput<any>) => {
+  return (node: Node, file: VFile) => {
     file.data.headings = headings(node);
   };
 }
