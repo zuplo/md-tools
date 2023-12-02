@@ -9,9 +9,6 @@ jobs:
       contents: "read"
       packages: "write"
 
-    env:
-      NODE_AUTH_TOKEN: ${{ secrets.GH_CUSTOM_TOKEN }}
-
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
@@ -31,3 +28,5 @@ jobs:
       - run: npm publish
         if: startsWith(github.ref, 'refs/tags/v')
         working-directory: ./dist
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_CUSTOM_TOKEN }}
